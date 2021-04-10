@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+    <div id='app'>
+      <!-- 不能使用Mustache语法 -->
+      <!-- <img src="{{imgUrl}}" > -->
+      <img v-bind:src="imgUrl" />
+      <a v-bind:href="aHref">{{message}}</a>
+      
+      <!-- 语法糖写法 -->
+      <img :src="imgUrl" />
+      <a :href="aHref">{{message}}</a>
+    </div>
+    
+    <script src='../js/vue.js'></script>
+    <script>
+      const app = new Vue({
+        el: '#app',
+        data: {
+          message: '你好啊',
+          imgUrl: 'https://img14.360buyimg.com/n0/jfs/t1/173408/39/1466/260958/60657a94Ee6767bb9/3481e39a55ad0641.jpg',
+          aHref: 'http://www.baidu.com'
+        }
+      })
+    </script>
+	</body>
+</html>
