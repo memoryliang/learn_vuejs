@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
-		<div id="app">
-			<ul>
-				<li v-for="(val, key) in movies">{{key}}--{{val}}</li>
-			</ul>
-		</div>
-		<script src="../js/vue.js"></script>
-		<script>
-			let app = new Vue({
-				el: '#app',
-				data: {
-					'movies': ["大话西游","星际穿越","唐伯虎点秋香","推手"]
-				}
-			})
-		</script>
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="(val, key) in movies">{{key}}--{{val}}</li>
+      </ul>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+      let app = new Vue({
+        el: '#app',
+        data: {
+          'movies': ["大话西游","星际穿越","唐伯虎点秋香","推手"]
+        }
+      })
+    </script>
+  </body>
 </html>
